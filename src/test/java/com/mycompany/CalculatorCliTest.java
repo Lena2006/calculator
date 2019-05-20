@@ -9,9 +9,6 @@ package com.mycompany;
  *
  * @author user
  */
-public interface Calkulator {
-    public double calculate(String expression);
-    
-    
+public class CalculatorCliTest {
     
 }
