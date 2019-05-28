@@ -6,6 +6,7 @@
 package com.mycompany;
 
 
+import static jdk.nashorn.internal.objects.Global.Infinity;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;
@@ -47,6 +48,10 @@ public class CalkulatorImpTest {
         double result = calkulator.calculate("sin(1)*sin(1)+cos(1)*cos(1)");
         assertEquals(1, result, 1e-9);
     }
+    @Test
+    public void addTest_3() throws Exception {
+        double result = calkulator.calculate("1/0");
+        assertEquals(Infinity, result, 1e-9);
 }
-    
+} 
    

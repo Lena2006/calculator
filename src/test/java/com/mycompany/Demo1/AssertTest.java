@@ -30,4 +30,8 @@ public class AssertTest {
                 1d / 3 + 1d / 3 + 1d / 3,
                 1e-10);
     }
+    @Test(expected = ArithmeticException.class)
+    public void zero_division() {
+            assertEquals(10 / 0, 5);
+    }
 }
